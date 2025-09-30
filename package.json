@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "concurrently \"npx tailwindcss -i ./tailwind.css -o ./styles.css --watch\" \"npx http-server . -p 3001\"",
     "build": "npx tailwindcss -i ./tailwind.css -o ./styles.css --minify",
+    "vercel-build": "npx tailwindcss -i ./tailwind.css -o ./styles.css --minify",
     "start": "npx http-server . -p 3001",
     "css:watch": "npx tailwindcss -i ./tailwind.css -o ./styles.css --watch",
     "css:build": "npx tailwindcss -i ./tailwind.css -o ./styles.css --minify"
