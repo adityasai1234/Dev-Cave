@@ -31,7 +31,6 @@
       </a>
     </nav>
 
-    <!-- About Me Content -->
     <div class="min-h-screen py-20 px-8 md:px-16 lg:px-24">
       <div class="container mx-auto max-w-6xl">
         <!-- Header -->
@@ -172,10 +171,8 @@
         }
       }
 
-      // Load stats when page loads
       window.addEventListener("load", fetchGitHubStats);
 
-      // Smooth hide/show navigation buttons on scroll
       let lastScrollTop = 0;
       const navButtons = document.getElementById("nav-buttons");
       let ticking = false;
@@ -184,12 +181,10 @@
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         if (scrollTop > 100) {
-          // Scrolling down - hide buttons smoothly
           navButtons.style.opacity = "0";
           navButtons.style.transform = "translateY(-20px)";
           navButtons.style.pointerEvents = "none";
         } else {
-          // At top - show buttons
           navButtons.style.opacity = "1";
           navButtons.style.transform = "translateY(0)";
           navButtons.style.pointerEvents = "auto";
