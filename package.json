@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "Aditya's Portfolio Website",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./tailwind.css -o ./styles.css --watch",
-    "build": "npx tailwindcss -i ./tailwind.css -o ./styles.css",
-    "dev": "npx tailwindcss -i ./tailwind.css -o ./styles.css --watch"
+    "dev": "concurrently \"npx tailwindcss -i ./tailwind.css -o ./styles.css --watch\" \"npx http-server . -p 3001\"",
+    "build": "npx tailwindcss -i ./tailwind.css -o ./styles.css --minify",
+    "start": "npx http-server . -p 3001",
+    "css:watch": "npx tailwindcss -i ./tailwind.css -o ./styles.css --watch",
+    "css:build": "npx tailwindcss -i ./tailwind.css -o ./styles.css --minify"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "concurrently": "^7.6.0",
+    "http-server": "^14.1.1"
   }
 }
