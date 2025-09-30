@@ -1,6 +1,8 @@
 {
   "version": 2,
   "name": "aditya-portfolio",
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
   "routes": [
     {
       "src": "/",

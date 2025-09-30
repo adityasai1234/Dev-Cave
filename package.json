@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Aditya's Portfolio Website",
   "scripts": {
-    "dev": "concurrently \"npx tailwindcss -i ./tailwind.css -o ./styles.css --watch\" \"npx http-server . -p 3001\"",
-    "build": "npx tailwindcss -i ./tailwind.css -o ./styles.css --minify",
-    "vercel-build": "npx tailwindcss -i ./tailwind.css -o ./styles.css --minify",
-    "start": "npx http-server . -p 3001",
-    "css:watch": "npx tailwindcss -i ./tailwind.css -o ./styles.css --watch",
-    "css:build": "npx tailwindcss -i ./tailwind.css -o ./styles.css --minify"
+    "dev": "concurrently \"npx tailwindcss -i ./tailwind.css -o ./public/styles.css --watch\" \"npx http-server ./public -p 3001\"",
+    "build": "npx tailwindcss -i ./tailwind.css -o ./public/styles.css --minify && cp index.html about.html public/",
+    "start": "echo 'Static site ready'",
+    "css:watch": "npx tailwindcss -i ./tailwind.css -o ./public/styles.css --watch",
+    "css:build": "npx tailwindcss -i ./tailwind.css -o ./public/styles.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17",
