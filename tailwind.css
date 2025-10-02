@@ -48,4 +48,12 @@ html {
     @apply -translate-y-2 bg-slate-700 border-blue-400 shadow-lg;
     box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
   }
+  
+  .contact-card {
+    @apply p-6 bg-slate-800 rounded-lg border border-slate-700 transition-all duration-300 hover:-translate-y-2 hover:bg-slate-700 hover:border-blue-400 hover:shadow-lg;
+  }
+  
+  .contact-card:hover {
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+  }
 }
