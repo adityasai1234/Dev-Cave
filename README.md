@@ -1,6 +1,3 @@
-# Aditya's Portfolio
-
-A modern, responsive portfolio website built with HTML, Tailwind CSS, and JavaScript.
 
 ## 🚀 Features
 
@@ -99,12 +96,7 @@ portfolio/
 1. **Update personal info** in `index.html` and `about.html`
 2. **Change GitHub username** in the API calls
 3. **Modify colors** in `tailwind.config.js`
-4. **Add new sections** as needed
 
 ## 📱 Live Demo
 
-Visit the live portfolio: [Your Domain Here]
-
-## 📄 License
-
-MIT License - feel free to use this template for your own portfolio!
+Visit the live portfolio: [addyhacks.xyz]
