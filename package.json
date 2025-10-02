@@ -4,7 +4,7 @@
   "description": "Aditya's Portfolio Website",
   "scripts": {
     "dev": "concurrently \"npx tailwindcss -i ./tailwind.css -o ./public/styles.css --watch\" \"npx http-server ./public -p 3001\"",
-    "build": "npx tailwindcss -i ./tailwind.css -o ./public/styles.css --minify && cp index.html about.html public/",
+    "build": "npx tailwindcss -i ./tailwind.css -o ./public/styles.css --minify && cp index.html about.html contact.html public/",
     "start": "echo 'Static site ready'",
     "css:watch": "npx tailwindcss -i ./tailwind.css -o ./public/styles.css --watch",
     "css:build": "npx tailwindcss -i ./tailwind.css -o ./public/styles.css --minify"
