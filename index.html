@@ -43,12 +43,11 @@
         <h1 class="hero-title">Yo i'm Aditya</h1>
         <p class="hero-subtitle">i'm a teenage Software engineer</p>
         <p class="hero-description">
-          Crafting digital experiences with passion and precision
+      i drink alot of monster and go outside(lie)
         </p>
       </div>
     </div>
 
-    <!-- Additional content to enable scrolling -->
     <div
       class="min-h-screen bg-slate-900 text-white flex items-center justify-center"
     >
@@ -75,7 +74,6 @@
     </div>
 
     <script>
-      // Smooth hide/show navigation buttons on scroll
       let lastScrollTop = 0;
       const navButtons = document.getElementById("nav-buttons");
       let ticking = false;
@@ -85,12 +83,10 @@
           window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 50) {
-          // Scrolling down - hide buttons smoothly
           navButtons.style.opacity = "0";
           navButtons.style.transform = "translateY(-20px)";
           navButtons.style.pointerEvents = "none";
         } else {
-          // At top - show buttons
           navButtons.style.opacity = "1";
           navButtons.style.transform = "translateY(0)";
           navButtons.style.pointerEvents = "auto";
