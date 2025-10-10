@@ -247,5 +247,15 @@
 
       window.addEventListener("scroll", requestTick);
     </script>
+    
+    <!-- Vercel Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script>
+      import('https://cdn.skypack.dev/@vercel/analytics').then(({ inject }) => inject());
+      import('https://cdn.skypack.dev/@vercel/speed-insights').then(({ injectSpeedInsights }) => injectSpeedInsights());
+    </script>
   </body>
 </html>
