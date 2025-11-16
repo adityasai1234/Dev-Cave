@@ -1,16 +1,5 @@
-# Minimal 3D Next.js Portfolio
-
-A minimalist, high-performant 3D portfolio website built with Next.js, React, Chakra UI, Framer Motion, and Three.js (react-three-fiber).
 
 ## Features
-
-- ✨ **3D Scene**: Interactive Three.js scene with react-three-fiber
-- 🎨 **Modern UI**: Built with Chakra UI for beautiful, accessible components
-- 🎭 **Smooth Animations**: Framer Motion for delightful micro-interactions
-- 📱 **Responsive**: Mobile-first design that works on all devices
-- ♿ **Accessible**: Respects `prefers-reduced-motion` and follows WCAG guidelines
-- 🌓 **Dark Mode**: Built-in dark mode support
-- ⚡ **Performance**: Optimized for speed with Next.js 14
 
 ## Tech Stack
 
@@ -87,15 +76,3 @@ Update the color palette in `src/theme/index.ts`.
 ### Modify 3D Scene
 
 Edit `src/components/three/Scene.tsx` to change the 3D object or animations.
-
-## Deployment
-
-This project is optimized for deployment on Vercel:
-
-1. Push your code to GitHub
-2. Import the project on Vercel
-3. Deploy!
-
-## License
-
-MIT
