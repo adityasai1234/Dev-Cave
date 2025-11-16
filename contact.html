@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="font-space overflow-x-hidden bg-slate-900 text-white">
-    <!-- Navigation -->
     <nav class="fixed top-6 left-6 md:top-8 md:left-8 flex gap-4 z-50 flex-col md:flex-row transition-all duration-500 ease-in-out" id="nav-buttons">
       <a href="index.html" class="btn-secondary">← Back Home</a>
       <a href="about.html" class="btn-secondary">About Me</a>
@@ -33,10 +32,8 @@
       </a>
     </nav>
 
-    <!-- Contact Content -->
     <div class="min-h-screen flex items-center justify-center py-20 px-8 md:px-16 lg:px-24">
       <div class="container mx-auto max-w-4xl">
-        <!-- Header -->
         <div class="text-center mb-16 pt-16">
           <h1
             class="text-5xl md:text-7xl font-orbitron font-black mb-6 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent"
@@ -52,9 +49,7 @@
           </p>
         </div>
 
-        <!-- Contact Cards -->
         <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-16">
-          <!-- Email -->
           <a href="mailto:adityasai3230@gmail.com" class="contact-card group">
             <div class="flex items-center gap-6">
               <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center group-hover:bg-blue-500 transition-colors flex-shrink-0">
@@ -69,8 +64,6 @@
               </div>
             </div>
           </a>
-
-          <!-- Instagram -->
           <a href="https://instagram.com/aditya._.dmg" target="_blank" class="contact-card group">
             <div class="flex items-center gap-6">
               <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center group-hover:from-purple-400 group-hover:to-pink-400 transition-all flex-shrink-0">
@@ -107,7 +100,6 @@
     </div>
 
     <script>
-      // Smooth hide/show navigation buttons on scroll
       let lastScrollTop = 0;
       const navButtons = document.getElementById("nav-buttons");
       let ticking = false;
@@ -116,12 +108,10 @@
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         if (scrollTop > 100) {
-          // Scrolling down - hide buttons smoothly
           navButtons.style.opacity = "0";
           navButtons.style.transform = "translateY(-20px)";
           navButtons.style.pointerEvents = "none";
         } else {
-          // At top - show buttons
           navButtons.style.opacity = "1";
           navButtons.style.transform = "translateY(0)";
           navButtons.style.pointerEvents = "auto";
@@ -141,7 +131,6 @@
       window.addEventListener("scroll", requestTick);
     </script>
     
-    <!-- Vercel Analytics -->
     <script>
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>

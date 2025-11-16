@@ -1,102 +1,101 @@
+# Minimal 3D Next.js Portfolio
 
-## 🚀 Features
+A minimalist, high-performant 3D portfolio website built with Next.js, React, Chakra UI, Framer Motion, and Three.js (react-three-fiber).
 
-- **Responsive Design** - Works on all devices
-- **Smooth Animations** - Fade-in effects and hover animations
-- **GitHub Integration** - Live GitHub stats and repository links
-- **Modern UI** - Clean design with gradient backgrounds
-- **Fast Loading** - Optimized for performance
+## Features
 
-## 🛠️ Tech Stack
+- ✨ **3D Scene**: Interactive Three.js scene with react-three-fiber
+- 🎨 **Modern UI**: Built with Chakra UI for beautiful, accessible components
+- 🎭 **Smooth Animations**: Framer Motion for delightful micro-interactions
+- 📱 **Responsive**: Mobile-first design that works on all devices
+- ♿ **Accessible**: Respects `prefers-reduced-motion` and follows WCAG guidelines
+- 🌓 **Dark Mode**: Built-in dark mode support
+- ⚡ **Performance**: Optimized for speed with Next.js 14
 
-- HTML5
-- Tailwind CSS
-- JavaScript (Vanilla)
-- GitHub API
-- Vercel (Hosting)
+## Tech Stack
 
-## 📦 Installation
+- **Framework**: Next.js 14 (App Router)
+- **UI**: Chakra UI
+- **Animation**: Framer Motion
+- **3D**: Three.js via `@react-three/fiber` + `@react-three/drei`
+- **Language**: TypeScript
+
+## Getting Started
+
+### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/portfolio.git
-
-# Navigate to project directory
-cd portfolio
-
-# Install dependencies
 npm install
-
-# Start development server
-npm run dev
 ```
 
-## 🔧 Development
+### Development
 
 ```bash
-# Watch CSS changes and serve locally
 npm run dev
+```
 
-# Build for production
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build
+
+```bash
 npm run build
-
-# Just build CSS
-npm run css:build
-
-# Watch CSS only
-npm run css:watch
+npm start
 ```
 
-## 🚀 Deployment
-
-### Deploy to Vercel
-
-1. **Push to GitHub:**
-   ```bash
-   git add .
-   git commit -m "Ready for deployment"
-   git push origin main
-   ```
-
-2. **Deploy via Vercel CLI:**
-   ```bash
-   npm install -g vercel
-   vercel login
-   vercel --prod
-   ```
-
-3. **Or use Vercel Dashboard:**
-   - Go to [vercel.com](https://vercel.com)
-   - Import your GitHub repository
-   - Deploy automatically!
-
-### Vercel Configuration
-
-The project includes `vercel.json` with optimal settings:
-- Build command: `npm run vercel-build`
-- Output directory: `./`
-- Custom routes for clean URLs
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-portfolio/
-├── index.html          # Main landing page
-├── about.html          # About me page
-├── styles.css          # Compiled CSS (auto-generated)
-├── tailwind.css        # Source CSS with Tailwind directives
-├── tailwind.config.js  # Tailwind configuration
-├── package.json        # Dependencies and scripts
-├── vercel.json         # Vercel deployment config
-└── README.md           # This file
+src/
+  app/                  # Next.js app router pages
+    layout.tsx
+    page.tsx            # home
+    projects/page.tsx
+    contact/page.tsx
+  components/
+    ui/                 # UI components
+      Button.tsx
+      Header.tsx
+      Footer.tsx
+      Hero.tsx
+      ProjectCard.tsx
+      ContactForm.tsx
+      Layout.tsx
+    three/              # 3D components
+      ThreeCanvas.tsx
+      Scene.tsx
+  hooks/
+    useReducedMotion.ts
+  lib/
+    motion.tsx          # Chakra + Framer Motion integration
+  theme/
+    index.ts            # Chakra theme configuration
+  data/
+    projects.json       # Project data
 ```
 
-## 🎨 Customization
+## Customization
 
-1. **Update personal info** in `index.html` and `about.html`
-2. **Change GitHub username** in the API calls
-3. **Modify colors** in `tailwind.config.js`
+### Update Projects
 
-## 📱 Live Demo
+Edit `src/data/projects.json` to add or modify projects.
 
-Visit the live portfolio: [addyhacks.xyz]
+### Change Colors
+
+Update the color palette in `src/theme/index.ts`.
+
+### Modify 3D Scene
+
+Edit `src/components/three/Scene.tsx` to change the 3D object or animations.
+
+## Deployment
+
+This project is optimized for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import the project on Vercel
+3. Deploy!
+
+## License
+
+MIT

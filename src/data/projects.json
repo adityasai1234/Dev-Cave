@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Project Alpha",
+    "description": "A modern web application built with React and TypeScript, featuring real-time updates and a beautiful UI.",
+    "tags": ["React", "TypeScript", "Next.js"],
+    "image": "/images/project-1.jpg",
+    "link": "https://github.com",
+    "github": "https://github.com"
+  },
+  {
+    "id": 2,
+    "title": "Project Beta",
+    "description": "An innovative mobile app that solves everyday problems with elegant design and smooth performance.",
+    "tags": ["React Native", "Node.js", "MongoDB"],
+    "image": "/images/project-2.jpg",
+    "link": "https://github.com",
+    "github": "https://github.com"
+  },
+  {
+    "id": 3,
+    "title": "Project Gamma",
+    "description": "A data visualization tool that transforms complex datasets into beautiful, interactive charts.",
+    "tags": ["D3.js", "Python", "PostgreSQL"],
+    "image": "/images/project-3.jpg",
+    "link": "https://github.com",
+    "github": "https://github.com"
+  }
+]
+
